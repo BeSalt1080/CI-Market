@@ -1,0 +1,24 @@
+.navbar-brand
+{
+  font-family: 'Lato', sans-serif;
+  color:grey;
+  font-size: 30px;
+ 
+}
+.navbar-nav
+{
+  font-family: 'Lato', sans-serif;
+  color:grey;
+  font-size: 20px;
+  
+}
+
+
+
+/* buat slider */
+.carousel-item{
+     height: 600px;
+     width: 100%;
+}
+
+/* end slider */
