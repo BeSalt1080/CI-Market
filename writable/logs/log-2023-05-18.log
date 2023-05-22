@@ -1,0 +1,224 @@
+ERROR - 2023-05-18 08:31:04 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-05-18 08:31:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-05-18 08:32:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-18 08:36:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	`password` CHAR NOT NULL,
+	CONSTRAINT `pk_products` PRIMARY KEY(`i...' at line 3 in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(26): CodeIgniter\Database\Forge->createTable('products')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-18 08:37:38 --> mysqli_sql_exception: Table 'products' already exists in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(26): CodeIgniter\Database\Forge->createTable('products')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-18 08:37:59 --> mysqli_sql_exception: Table 'products' already exists in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(26): CodeIgniter\Database\Forge->createTable('products')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-18 08:40:41 --> mysqli_sql_exception: Unknown table 'market.users' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `use...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `use...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `use...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `use...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(31): CodeIgniter\Database\Forge->dropTable('users')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->down()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-05-18 08:41:02 --> mysqli_sql_exception: Unknown table 'market.users' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `use...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `use...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `use...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `use...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(31): CodeIgniter\Database\Forge->dropTable('users')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->down()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-05-18 08:41:19 --> mysqli_sql_exception: Unknown table 'market.users' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `use...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `use...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `use...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `use...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(31): CodeIgniter\Database\Forge->dropTable('users')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->down()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-05-18 08:41:24 --> mysqli_sql_exception: Unknown table 'market.users' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `use...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `use...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `use...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `use...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(31): CodeIgniter\Database\Forge->dropTable('users')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->down()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-05-18 08:41:29 --> mysqli_sql_exception: Unknown table 'market.users' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `use...', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `use...')
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `use...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `use...')
+#4 C:\Users\123\Documents\CI-Market\app\Database\Migrations\2023-05-18-074701_CreateUsersTable.php(31): CodeIgniter\Database\Forge->dropTable('users')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->down()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-18 08:42:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'market' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'market', 3306, '', 0)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'market' in C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\123\Documents\CI-Market\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\123\Documents\CI-Market\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
