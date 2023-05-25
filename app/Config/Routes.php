@@ -29,11 +29,19 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+service('auth')->routes($routes);
+
 $routes->get('/', 'Home::index');
 $routes->get('/user', 'User::index');
-$routes->get('/product', 'product::index');
-$routes->get('/admin', 'Admin::index');
-
+$routes->post('/user/login', 'Product::login');
+$routes->group("product", static function ($routes){
+    $routes->get('/', 'Product::index');
+    $routes->get('/create', 'Product::createView');
+    $routes->post('/insert','Product::insert');
+});
+$routes->group("admin", static function ($routes){
+    $routes->get('/', 'Admin::index');
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing

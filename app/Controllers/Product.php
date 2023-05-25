@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
+use function PHPUnit\Framework\isNull;
+
 class Product extends BaseController
 {
     protected $productModel;
@@ -13,15 +15,31 @@ class Product extends BaseController
     }
     public function index()
     {
-        $data = ["products" => $this->productModel->findAll()];
+        $authorized = false;
+        if(auth()->user())
+        {
+            if(auth()->user()->can("product.create"))
+            $authorized = true;
+        }
+        $data = [
+            "products" => $this->productModel->findAll(),
+            "authorized" => $authorized,
+        ];
         return view("product/index", $data);
     }
-    public function create()
+    public function createView()
     {
+        if(!auth()->user())
+        {
+            return redirect()->back()->with("message","Lemao");
+        }
         return view("product/create");
     }
     public function insert()
     {
+        $rules = [
+
+        ];
         $name = $_POST["name"];
         $description = $_POST["description"];
         $data = [

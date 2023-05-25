@@ -9,22 +9,24 @@
 </head>
 
 <body>
-    <a href="product/create">Add Product</a>
-    <table>
+    <?php 
+        if($authorized) echo '<a href="product/create">Add Product</a>';
+    ?>
+    <table border>
         <tr>
             <th>Product Image</th>
             <th>Name</th>
             <th>Description</th>
             <th>Price</th>
         </tr>
-        <?php for ($i = 0; $i > count($products); $i++) : ?>
+        <?php foreach($products as $product) : ?>
             <tr>
-                <td><img src="img/<?= $products; ?>" alt="<?= $products['name'] ?> Image"></td>
-                <td><?= $products[$i]['name'] ?></td>
-                <td><?= $products[$i]['description'] ?></td>
-                <td><?= $products[$i]['price'] ?></td>
+                <td><img src="img/<?= $product['image']; ?>" alt="<?= $product['name'] ?> Image"></td>
+                <td><?= $product['name'] ?></td>
+                <td><?= $product['description'] ?></td>
+                <td><?= $product['price'] ?></td>
             </tr>
-        <?php endfor; ?>
+        <?php endforeach; ?>
     </table>
 </body>
 

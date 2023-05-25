@@ -20,6 +20,13 @@ class CreateProductsTable extends Migration
             "description" => [
                 "type" => "TEXT",
             ],
+            "image" => [
+                "type" => "TEXT"
+            ],
+            "price" => [
+                "type" => "FLOAT",
+                "unsigned" => true,
+            ],
             "id_user" => [
                 "type" => "INT",
                 "unsigned" => true,
