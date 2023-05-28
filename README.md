@@ -1,7 +1,7 @@
 # CI-Market
 A Marketplace Webiste Using CodeIgniter4
 
-## requirements
+## Requirements
 - PHP 7.4 or later
 - Composer 2.0.14 or later
 - MySQL  5.1 or later
@@ -22,5 +22,5 @@ php spark shield:setup
 php spark serve
 
 ```
-## Get admin privileges
+## How to get admin privileges
 To obtain admin privileges, please register a new user and then navigate to localhost:8080/getAdmin
