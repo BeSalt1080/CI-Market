@@ -31,16 +31,25 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 service('auth')->routes($routes);
 
-$routes->get('/', 'Home::index');
-$routes->get('/user', 'User::index');
-$routes->post('/user/login', 'Product::login');
+$routes->get('/', 'Home::index', ['as' => 'home']);
+$routes->get('/search','Product::search', ['as' => 'serach']);
+$routes->get('/getAdmin', 'Admin::getAdmin');
 $routes->group("product", static function ($routes){
-    $routes->get('/', 'Product::index');
-    $routes->get('/create', 'Product::createView');
-    $routes->post('/insert','Product::insert');
+    $routes->get('', 'Product::index', ['as' => 'product_view']);
+    $routes->get('details', 'Product::detailView', ['as' => 'product_details']);
+    $routes->get('create', 'Product::createView' , ['as' => 'product_create_view']);
+    $routes->post('insert','Product::insert' , ['as' => 'product_insert']);
+    $routes->get('updateView', 'Product::updateView' , ['as' => 'product_update_view']);
+    $routes->post('update','Product::update' , ['as' => 'update']);
+    $routes->get('delete','Product::delete' , ['as' => 'delete']);
 });
 $routes->group("admin", static function ($routes){
-    $routes->get('/', 'Admin::index');
+    $routes->get('', 'Admin::index', ['as' => 'admin_page']);
+    $routes->get('product', "Admin::viewProduct", ['as' => 'admin_view_product']);
+    $routes->get('product/verify', 'Admin::verifyProduct', ['as' => 'admin_verify_product']);
+    $routes->post('delete','Product::delete' , ['as' => 'delete']);
+    $routes->get('user', "Admin::viewUser", ['as' => 'admin_view_user']);
+    $routes->get('user/delete', "Admin::deleteUser", ['as' => 'admin_delete_user']);
 });
 /*
  * --------------------------------------------------------------------

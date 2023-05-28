@@ -27,9 +27,13 @@ class CreateProductsTable extends Migration
                 "type" => "FLOAT",
                 "unsigned" => true,
             ],
-            "id_user" => [
+            "user_id" => [
                 "type" => "INT",
                 "unsigned" => true,
+            ],
+            "verified" => [
+                "type" => "TINYINT",
+                "default" => 0,
             ]
         ]);
         $this->forge->addKey("id", true);
